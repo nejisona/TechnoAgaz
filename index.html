@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechnoAgaz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <!-- fontAwsoem link -->
+    <script
+      src="https://kit.fontawesome.com/569370adc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font remix cdn not necesary -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- link to our local stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav bar is outside main beacause we implement locomotiveJs in main
+         and it does not allow any other type of scroling to avoid these we
+          are going to make it outside the main  -->
+    <div id="nav">
+      <!-- <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="4.5em"
+        viewBox="0 0 640 512"
+      >
+        
+        <path
+          d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+        />
+      </svg> -->
+      <div id="nav-part1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="4em"
+          viewBox="0 0 384 512"
+        >
+          <path
+            d="M32 32C14.3 32 0 46.3 0 64S14.3 96 32 96H160V448c0 17.7 14.3 32 32 32s32-14.3 32-32V96H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H192 32z"
+          />
+        </svg>
+        <svg id="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          height="4em"
+          viewBox="0 0 384 512"
+        >
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+          />
+        </svg>
+      </div>
+      <nav id="nav-part2">
+        <div id="links">
+          <a href="">About</a>
+          <a href="">Register</a>
+          <a href="">Sponcers</a>
+          <a href="">Event</a>
+        </div>
+        <div id="icons">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </nav>
+    </div>
+    <div id="cursor"></div>
+    <div id="main">
+      <div id="page1">
+        <h1>TECHNOAGAZ</h1>
+        <h3 class="block-effect" style="--td: 1.2s">
+        <div class="block-reveal" style="--bc: black; --d: .1s">Apex University</div>
+        </h3>
+        
+        <div id="video-container">
+          <div id="play">PLAY</div>
+          <video autoplay muted loop src="./video.mp4"></video>
+        </div>
+      </div>
+      <div id="page2">
+        <div id="elem1" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qph7hwmKR-82HuBbyhLMdgHaLH%26pid%3DApi&f=1&ipt=9f6219c02d0e17a5e30c743646746edcaeaafc52297d94cef9ee3f80b1a57281&ipo=images"
+            alt="Singing"
+          />
+          <div data-scroll data-scroll-speed="-2" class="dets"></div>
+        </div>
+        <div id="elem2" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qph7hwmKR-82HuBbyhLMdgHaLH%26pid%3DApi&f=1&ipt=9f6219c02d0e17a5e30c743646746edcaeaafc52297d94cef9ee3f80b1a57281&ipo=images"
+            alt="Singing"
+          />
+          <div data-scroll data-scroll-speed="-2" class="dets"></div>
+        </div>
+        <div id="elem3" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qph7hwmKR-82HuBbyhLMdgHaLH%26pid%3DApi&f=1&ipt=9f6219c02d0e17a5e30c743646746edcaeaafc52297d94cef9ee3f80b1a57281&ipo=images"
+            alt="Singing"
+          />
+          <div data-scroll data-scroll-speed="-2" class="dets"></div>
+        </div>
+      </div>
+      <div id="page3">
+        <div class="child" id="chil1">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CymNwH29fKiaLO92sHBfkAHaHa%26pid%3DApi&f=1&ipt=9b69998c567dff05d3ed4b443544fbae00b17c6266a52ba2ada28d979a7f9bb4&ipo=images"
+            alt=""
+          />
+        </div>
+        <div class="child" id="chil2">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4v8SPIEhfL8Z_RNEPCLMyQHaE5%26pid%3DApi&f=1&ipt=53d84094f301050fe072287a01ad2f80166ca434d0a086e344320363ff96cc07&ipo=images"
+            alt=""
+          />
+        </div>
+        <div class="child" id="chil3">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UpFKd1N_pAT-vn9jsa8oMgHaEK%26pid%3DApi&f=1&ipt=9421b82bf07de85fe6a4b49f25af028521409216bfd36f2c7c0e3afcea4675d6&ipo=images"
+            alt=""
+          />
+        </div>
+        <div class="child" id="chil4">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.lj9RlChUb2JmyqHjnlXpKQHaE8%26pid%3DApi&f=1&ipt=be621268440e54e6e2b8bf57d819106dc646fce4057b4dead0b608fc758133c9&ipo=images"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="page4">
+
+      </div>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
